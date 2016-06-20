@@ -1,0 +1,33 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/CSS/myStyle.css">
+    <title>Index</title>
+    <script src="~/Scripts/jquery-2.2.3.min.js"></script>
+    <script src="~/Scripts/myJavaScript.js"></script>
+</head>
+<body>
+
+    <div> Title:  @ViewBag.sessionTitle </div>
+
+    <div> Url:  </div>
+
+    <table border="1" style="width:100%">
+      
+        <!--For all data to go into table-->
+        @for (int i = 0; i < ViewBag.numberOfIssues; i++)
+        {
+            <tr>
+                <td> @ViewBag.htmlIssues[i] </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+                        
+        }
+    </table>
+</body>
+</html>

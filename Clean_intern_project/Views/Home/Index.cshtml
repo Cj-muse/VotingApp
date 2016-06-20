@@ -1,0 +1,26 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/CSS/myStyle.css">
+    <title>Index</title>
+    <script src="~/Scripts/jquery-2.2.3.min.js"></script>
+    <script src="~/Scripts/myJavaScript.js"></script>
+</head>
+<body>
+    <h1>Create voting session</h1>
+
+    <form id="createVotingSessionForm" action="/Home/CreateSession" method="post">
+        <h3>Enter session title</h3>
+        <input name="sessionTitle" type="text" />
+
+        <h3>Enter issues to vote on</h3>
+        <textarea name="issues" rows="5" cols="50"></textarea>
+
+        <input type="submit" value="Create"/>
+    </form>
+
+</body>
+</html>
