@@ -12,7 +12,7 @@ namespace Clean_intern_project.Tests
         {
             // arrange
             VotingSessionManager manager = new VotingSessionManager();
-            
+
             // act
             VotingSessionObject votingSessionObject = manager.CreateSession("my session name", "blah haha", new Dictionary<string, VotingSessionObject>());
 

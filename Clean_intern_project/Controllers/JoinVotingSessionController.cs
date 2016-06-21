@@ -18,10 +18,6 @@ namespace Clean_intern_project.Controllers
             if (dictionary[guid] != null)
             {
                 ViewBag.votingSessionData = dictionary[guid];
-
-                //debug
-                int i = 0;
-                i++;              
             }
             else
             {

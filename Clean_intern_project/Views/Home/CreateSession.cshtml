@@ -13,7 +13,8 @@
 
     <div> Title:  @ViewBag.VotingSession.SessionTitle </div>
 
-    <div> Url: /JoinVotingSession/Index/?guid=@Html.Raw(ViewBag.VotingSession.SessionGuidString) </div>
+    <div> AdminUrl: /VotingSession/Index/?guid=@Html.Raw(ViewBag.VotingSession.SessionGuidString) </div>
+    <div> VoterUrl: /JoinVotingSession/Index/?guid=@Html.Raw(ViewBag.VotingSession.SessionGuidString) </div>
 
     <table border="1" style="width:100%">
         <tr>
