@@ -17,7 +17,7 @@ namespace Clean_intern_project.Tests
             VotingSessionObject votingSessionObject = manager.CreateSession("my session name", "blah haha", new Dictionary<string, VotingSessionObject>());
 
             // assert
-            Assert.AreEqual("my session name", votingSessionObject.SessionTitle);
+            Assert.AreEqual("my session", votingSessionObject.SessionTitle);
         }
     }
 }
