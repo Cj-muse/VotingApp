@@ -1,6 +1,6 @@
 ﻿
 <!DOCTYPE html>
-
+<!--This view is for voting session admin only-->
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
@@ -20,8 +20,8 @@
         <tr>
             <td> Issue          </td>
             <td> IsActive       </td>
-            <td> VotesFor       </td>
-            <td> VotesAgainst   </td>
+            <td> YesVotes       </td>
+            <td> NoVotes   </td>
             <td> NumberOfVoters </td>
         </tr>
 
@@ -31,8 +31,8 @@
             <tr>
                 <td> @ViewBag.VotingSession.VotingObjectsList[i].Issue          </td>
                 <td> @ViewBag.VotingSession.VotingObjectsList[i].IsActive       </td>
-                <td> @ViewBag.VotingSession.VotingObjectsList[i].VotesFor       </td>
-                <td> @ViewBag.VotingSession.VotingObjectsList[i].VotesAgainst   </td>
+                <td> @ViewBag.VotingSession.VotingObjectsList[i].YesVotes       </td>
+                <td> @ViewBag.VotingSession.VotingObjectsList[i].NoVotes        </td>
                 <td> @ViewBag.VotingSession.VotingObjectsList[i].NumberOfVoters </td>
             </tr>
         }

@@ -3,3 +3,15 @@
     /*font: 400 arial;
     font-family: Arial;*/
 }
+
+#issue {
+    text-align: center;
+    padding: 40px;
+    border: 6px solid black;
+}
+
+.v {
+    margin: 10px;
+}
+
+

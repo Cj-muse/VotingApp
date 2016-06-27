@@ -1,17 +1,25 @@
 ﻿
 <!DOCTYPE html>
-
+<!--This view is for voters-->
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="~/CSS/myStyle.css">
     <title>Index</title>
     <script src="~/Scripts/jquery-2.2.3.min.js"></script>
-    
+    <script src="~/Scripts/voterJavaScript.js"></script>
+
 </head>
 <body>
+    <input type="hidden" id="sessionGuid" value="@ViewBag.votingSessionData.SessionGuidString">
+    <div> Title:  @Html.Raw(ViewBag.votingSessionData.SessionTitle)</div>
+    <div id="Issue">Issue: @Html.Raw(ViewBag.votingSessionData.VotingObjectsList[0].Issue)</div>
 
-    <div> Title:  @ViewBag.votingSessionData.SessionTitle </div>    
-    
+    <form id="voteForm">
+        Yes <input class="v" type="radio" name="vote" value="Yes" onclick="selectVote()">
+        No  <input class="v" type="radio" name="vote" value="No" onclick="selectVote()">
+        <input type="button" onclick="submitVote()" value="Submit">
+    </form>
+
 </body>
 </html>

@@ -5,15 +5,15 @@
         public VotingObject(string str)
         {
             Issue = str;
-            VotesFor = 0;
-            VotesAgainst = 0;
+            YesVotes = 0;
+            NoVotes = 0;
             NumberOfVoters = 0;
             IsActive = false;
         }
         
-        public int VotesFor { get; set; }
+        public int YesVotes { get; set; }
 
-        public int VotesAgainst { get; set; }
+        public int NoVotes { get; set; }
 
         public int NumberOfVoters { get; set; }
 

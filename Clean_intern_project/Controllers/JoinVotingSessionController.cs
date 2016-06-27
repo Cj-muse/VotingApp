@@ -14,10 +14,18 @@ namespace Clean_intern_project.Controllers
         public ActionResult Index(string guid)
         {
             Dictionary<string, VotingSessionObject> dictionary = (Dictionary<string, VotingSessionObject>)HttpContext.Application.Get("votingSessions");
+            VotingSessionObject votingSession = dictionary[guid];
 
             if (dictionary[guid] != null)
             {
-                ViewBag.votingSessionData = dictionary[guid];
+                // adding a voting session object to the viewbag
+                ViewBag.votingSessionData = votingSession;
+
+                // Update session data 
+
+
+                // Return updated dictionary to application scope object
+                HttpContext.Application["votingSessions"] = dictionary;
             }
             else
             {

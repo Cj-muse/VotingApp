@@ -31,11 +31,17 @@ namespace Clean_intern_project.Models
         private int CreateVotingObjects(string[] parsedIssues, List<VotingObject> votingObjects)
         {
             int i;
+
             for (i = 0; i < parsedIssues.Length; i++)
             {
                 if (string.Empty == parsedIssues[i])
                 { continue; }
+
                 VotingObject newVotingObject = new VotingObject(parsedIssues[i]);
+                if (0 == i)
+                {
+                    newVotingObject.IsActive = true;
+                }
                 votingObjects.Add(newVotingObject);
             }
             return i;
